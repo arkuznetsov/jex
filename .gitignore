@@ -1,0 +1,5 @@
+.vscode/*.*
+sonarlint.json
+\.sonar/
+build/
+*.ospx
