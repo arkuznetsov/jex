@@ -15,27 +15,37 @@
 * [Зависимости](#Зависимости)
 * [Команды приложения](#Приложение)
 
-## <a id="Зависимости"></a> Требуются следующие библиотеки и инструменты:
-- [jexlib](https://github.com/ArKuznetsov/jexlib)
-- [logos](https://github.com/oscript-library/logos)
-- [cli](https://github.com/Stepa86/cli)
+## <a id="Зависимости"></a> Требуются следующие библиотеки и инструменты
+
+* [jexlib](https://github.com/ArKuznetsov/jexlib)
+* [logos](https://github.com/oscript-library/logos)
+* [cli](https://github.com/Stepa86/cli)
 
 ## <a id="Приложение"></a> Команды приложения
+
 ---
 
-## select - Извлечь данные из строки или файла JSON
+## select - Извлечь данные из строки, файла или входящего потока JSON
 
 | Параметры: ||
 |-|-|
 | **--data** | - Строка JSON или путь к файлу JSON для извлечения данных |
 | **--path** | - Запрос в формате JSON-path |
+| **--encoding** | - Кодировка входящих данных (по умолчанию: UTF-8) |
 
-#### Пример:
+#### Пример
 
 ```bat
+rem Извлечение данных из строки JSON
 jex select --data "{""Ключ"":""Значение""}" --path "$.Ключ"
 ```
 
 ```bat
-jex select --data "d:\tmp\MyDataFile.json" --path "$.Ключ"
+rem Извлечение данных из файла JSON
+jex select --data "d:\tmp\MyDataFile.json" --path "$.Ключ" --encoding UTF-8
+```
+
+```bat
+rem Извлечение данных из потока ввода
+echo {"Ключ":"Значение"} | jex select --path "$.Ключ"
 ```
