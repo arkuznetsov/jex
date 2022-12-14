@@ -1,5 +1,3 @@
-# JSON data extraction application (jex)
-
 [![GitHub release](https://img.shields.io/github/release/ArKuznetsov/jex.svg?style=flat-square)](https://github.com/ArKuznetsov/jex/releases)
 [![GitHub license](https://img.shields.io/github/license/ArKuznetsov/jex.svg?style=flat-square)](https://github.com/ArKuznetsov/jex/blob/develop/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/downloads/ArKuznetsov/jex/latest/total?style=flat-square)](https://github.com/ArKuznetsov/jex/releases)
@@ -9,6 +7,10 @@
 [![Quality Gate](https://open.checkbsl.org/api/project_badges/measure?project=jex&metric=alert_status)](https://open.checkbsl.org/dashboard/index/jex)
 [![Coverage](https://open.checkbsl.org/api/project_badges/measure?project=jex&metric=coverage)](https://open.checkbsl.org/dashboard/index/jex)
 [![Tech debt](https://open.checkbsl.org/api/project_badges/measure?project=jex&metric=sqale_index)](https://open.checkbsl.org/dashboard/index/jex)
+
+<div style="text-align:right"><a href="https://checkbsl.org"><img alt="Checked by Silver Bulleters SonarQube BSL plugin" src="https://web-files.do.bit-erp.ru/sonar/b_t.png" style="width:400px"/></a></div>
+
+# JSON data extraction application (jex)
 
 Приложение для извлечения данных из строк и файлов JSON с помощью запросов JSON-path
 
